@@ -7,7 +7,7 @@ ssh2_version=1.1.2
 libssh2_version=1.8.0
 
 mkdir -p /app/vendor/libssh2
-curl "http://${S3_BUCKET}.s3.amazonaws.com/package/libssh2-${libssh2_version}.tgz" | tar xzv -C /app/vendor/libssh2
+curl "https://www.libssh2.org/download/libssh2-${libssh2_version}.tar.gz" | tar xzv -C /app/vendor/libssh2
 
 curl -L "http://pecl.php.net/get/ssh2-${ssh2_version}.tgz" \
     | tar xzv
